@@ -1,0 +1,83 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Form</title>
+    <link rel="stylesheet" href="styles.css" />5
+    <style>
+        .content {
+            margin-top: 20px;
+            border: 1px solid grey;
+            border-radius: 20px;
+            width: 325px;
+            height: 300px;
+            position: relative;
+            left: 315px;
+            padding-top: 30px;
+        }
+
+        input {
+            border: 1px solid grey;
+            border-radius: 20px;
+            padding: 5px 10px;
+            width: 230px;
+            height: 30px;
+        }
+
+        .content a {
+            text-decoration: none;
+        }
+
+        .check {
+            padding: 0px;
+            width: 15px;
+            height: 15px;
+        }
+
+        button {
+            border-radius: 20px;
+            width: 230px;
+            height: 30px;
+            margin: 10px 0px;
+            background-color: #999999;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Login Form</h1>
+            <nav>
+                <a href="home.html">Home</a>
+                <a href="about.html">About Us</a>
+                <a href="contact.html">Contact Us</a>
+            </nav>
+        </div>
+    </header>
+    <div class="container">
+        <div class="content">
+            <center>
+                <form action="index.html" method="post">
+                    <input type="text" placeholder="Email Address" /><br />
+                    <br />
+                    <input type="password" placeholder="Password" /><br />
+                    <br />
+                    <input type="checkbox" class="check"/>Remember me
+                    <a href="#">Forgot Password?</a><br />
+                    <br />
+                    <button>Login</button>
+                    <p>Not a member?<a href="#"> Signup now</a></p>
+                </form>
+            </center>
+        </div>
+    </div>
+    <footer>
+        <div class="container">
+            © 2023 MJK. All Rights Reserved.
+        </div>
+    </footer>
+</body>
+</html>
