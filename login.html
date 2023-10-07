@@ -61,7 +61,7 @@
         <div class="content">
             <center>
                 <form action="index.html" method="post">
-                    <input type="text" placeholder="Email Address" /><br />
+                    <input type="text" placeholder="Email Address" id="email"/><br />
                     <br />
                     <input type="password" placeholder="Password" /><br />
                     <br />
@@ -79,5 +79,18 @@
             © 2023 MJK. All Rights Reserved.
         </div>
     </footer>
+    <script>
+        const emailInput = document.getElementById('email');
+
+        emailInput.addEventListener('focusout', validateEmail);
+
+        function validateEmail() {
+            const email = emailInput.value.trim();
+            const emailPattern = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/;
+            if (!emailPattern.test(email)) {
+                alert('Please enter a valid email address.');
+            }
+        }
+    </script>
 </body>
 </html>

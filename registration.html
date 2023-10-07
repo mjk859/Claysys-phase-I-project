@@ -53,26 +53,26 @@
     <div class="container">
         <div class="content">
             <center>
-                <form action="index.html" method="post">
+                <form action="index.html" method="post" onsubmit="return confirmPassword()">
                     <input type="text" name="fname" placeholder="First name *" required><br>
                     <br>
                     <input type="text" name="lname" placeholder="Last name"><br>
                     <br>
-                    <input type="date" name="dob" placeholder="Date of birth"/><br />
+                    <input type="date" name="dob" placeholder="Date of birth *" required /><br />
                     <br />
-                    <input type="number" name="age" placeholder="Age"/><br />
+                    <input type="number" name="age" placeholder="Age" /><br />
                     <br />
                     Male: <input type="radio" class="radio">
                     Female: <input type="radio" class="radio">
                     Other: <input type="radio" class="radio"><br>
                     <br>
-                    
-                    
-                    <input type="number" name="mobileNumber" placeholder="Phone Number"><br>
+
+
+                    <input type="number" name="mobileNumber" placeholder="Phone Number *" required><br>
                     <br>
-                    <input type="email" name="email" placeholder="Email"><br>
+                    <input type="email" name="email" id="email" placeholder="Email *"><br>
                     <br>
-                    <textarea name="name" rows="4" cols="30">Address...</textarea><br />
+                    <textarea name="name" rows="4" cols="30" required placeholder="Address *"></textarea><br />
                     <br>
                     <label>State:</label>
                     <select>
@@ -88,14 +88,15 @@
                         <option>Tamil Nadu</option>
                     </select><br>
                     <br>
-                    <input type="email" name="username" placeholder="Username"><br>
+                    <input type="email" name="username" placeholder="Username *" required><br>
                     <br>
-                    <input type="password" name="password" placeholder="Password"><br>
+                    <input type="password" name="password" id="pswd" placeholder="Password *"><br>
                     <br>
-                    <input type="password" name="confpass" placeholder="Confirm Password"><br>
+                    <input type="password" name="confpswd" id="confpswd" placeholder="Confirm Password"><br>
+                    <span id="passwordError" style="color: red;"></span><br>
                     <br>
 
-                    <button type="button" name="button">Register</button>
+                    <button type="submit" name="button">Register</button>
                 </form>
             </center>
         </div>
@@ -105,5 +106,33 @@
             © 2023 MJK. All Rights Reserved.
         </div>
     </footer>
+    <script>
+        const emailInput = document.getElementById('email');
+        const passwordInput = document.getElementById('pswd');
+        const cPasswordInput = document.getElementById('confpswd');
+        const passwordError = document.getElementById("passwordError");
+
+        emailInput.addEventListener('focusout', validateEmail);
+
+        function validateEmail() {
+            const email = emailInput.value.trim();
+            const emailPattern = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/;
+            if (!emailPattern.test(email)) {
+                alert("Please enter a valid email address.")
+            }
+        }
+
+        function confirmPassword() {
+            const inputPassword = passwordInput.value;
+            const inputConfirmPassword = cPasswordInput.value;
+            if (inputPassword !== inputConfirmPassword) {
+                passwordError.textContent = "Passwords do not match.";
+                return false;
+            } else {
+                passwordError.textContent = "";
+                return true;
+            }
+        }
+    </script>
 </body>
 </html>
