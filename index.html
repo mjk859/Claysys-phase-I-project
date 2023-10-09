@@ -22,15 +22,20 @@
     <div class="container">
         <h1 style="text-align: center">MJK Associates</h1>
         <div class="carousel">
-            <!--image carousel -->
             <div class="carousel-image">
-                <img src="image1.jfif" alt="Image 1">
+                <img src="https://images.unsplash.com/photo-1664575602276-acd073f104c1?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTJ8fGJ1c2luZXNzfGVufDB8fDB8fHww&auto=format&fit=crop&w=500&q=60" alt="Image 1">
             </div>
             <div class="carousel-image">
-                <img src="image2.jfif" alt="Image 2">
+                <img src="https://media.istockphoto.com/id/1419530650/photo/leadership-management-and-teamwork-between-ceo-and-senior-manager-in-a-business-meeting-in.webp?b=1&s=170667a&w=0&k=20&c=CJOhQ2EVC8t3JrWilqAPo4ys7FJ48GMoU8ahitoQ_c4=" alt="Image 2">
             </div>
             <div class="carousel-image">
-                <img src="image3.jfif" alt="Image 3">
+                <img src="https://media.istockphoto.com/id/1636332539/photo/businessman-analyzing-strategy-on-mirror-at-office.webp?b=1&s=170667a&w=0&k=20&c=pLsYFegvZb-a16sR5k9R6XRIpCo86yJxtydSXOr7PI8=" alt="Image 4">
+            </div>
+            <div class="carousel-image">
+                <img src="https://media.istockphoto.com/id/1465316262/photo/businessman-inspecting-paperwork-document-of-business-data-analysis-working-management-report.webp?b=1&s=170667a&w=0&k=20&c=L6xi5VJG0gr3a40-i35k8XWcmglc5hlgYP-lSqdEd9s=" alt="Image 5">
+            </div>
+            <div class="carousel-image">
+                <img src="https://media.istockphoto.com/id/1460755337/photo/white-color-theme-modern-style-office-with-exposed-concrete-floor-and-a-lot-of-plant-3d.webp?b=1&s=170667a&w=0&k=20&c=vjO4QhU7YP-UEdHsrECZH01Nvj0T5aqnoWSh02XdLeo=" alt="Image 6">
             </div>
         </div>
     </div>
@@ -39,5 +44,29 @@
             © 2023 MJK. All Rights Reserved.
         </div>
     </footer>
+    <script>
+        const images = document.querySelectorAll('.carousel img');
+        let currentImageIndex = 0;
+
+        function showImage(index) {
+            images.forEach((img, i) => {
+                img.style.display = i === index ? 'block' : 'none';
+            });
+        }
+
+        function nextImage() {
+            currentImageIndex = (currentImageIndex + 1) % images.length;
+            showImage(currentImageIndex);
+        }
+
+        function previousImage() {
+            currentImageIndex = (currentImageIndex - 1 + images.length) % images.length;
+            showImage(currentImageIndex);
+        }
+
+        showImage(currentImageIndex);
+
+        setInterval(nextImage, 5000);
+    </script>
 </body>
 </html>
