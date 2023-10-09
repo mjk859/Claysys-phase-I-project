@@ -17,19 +17,10 @@ header {
         margin: 0 20px;
     }
 
-    header img {
-        position: absolute;
-        left: 250px;
-        top: 15px;
-    }
-
-    header nav {
-        position: relative;
-        left: 270px;
-    }
+    
 
 .container {
-    max-width: 960px;
+    max-width: 320px;
     margin: 20px auto;
     padding: 0 20px;
 }
@@ -51,4 +42,22 @@ footer {
     position: relative;
     bottom: 0;
     width: 100%;
+}
+
+@media (max-width: 768px) {
+    header img {
+        left: 10px;
+    }
+
+    header nav {
+        left: 30px;
+    }
+
+    .container {
+        padding: 0 10px;
+    }
+
+    .carousel {
+        height: 300px;
+    }
 }
