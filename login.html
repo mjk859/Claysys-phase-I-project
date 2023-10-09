@@ -5,7 +5,9 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login Form</title>
-    <link rel="stylesheet" href="styles.css" />5
+    <link rel="stylesheet" href="styles.css" />
+    <script src="script.js"></script>
+
     <style>
         .content {
             margin-top: 20px;
@@ -61,7 +63,7 @@
         <div class="content">
             <center>
                 <form action="index.html" method="post">
-                    <input type="text" placeholder="Email Address" id="email"/><br />
+                    <input type="text" placeholder="Email Address" id="email" onfocusout="validateEmail()"/><br />
                     <br />
                     <input type="password" placeholder="Password" /><br />
                     <br />
@@ -74,23 +76,11 @@
             </center>
         </div>
     </div>
-    <footer>
+    <footer style="position: relative; bottom: 0px;">
         <div class="container">
             © 2023 MJK. All Rights Reserved.
         </div>
     </footer>
-    <script>
-        const emailInput = document.getElementById('email');
-
-        emailInput.addEventListener('focusout', validateEmail);
-
-        function validateEmail() {
-            const email = emailInput.value.trim();
-            const emailPattern = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/;
-            if (!emailPattern.test(email)) {
-                alert('Please enter a valid email address.');
-            }
-        }
-    </script>
+    
 </body>
 </html>
