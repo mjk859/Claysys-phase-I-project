@@ -3,71 +3,180 @@
 <head>
     <title>MJK Associates</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <link rel="stylesheet" href="bootstrap-social.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
 </head>
 <body>
     <header>
-        <div class="container">
-            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAHsAAAB7CAMAAABjGQ9NAAAAaVBMVEX///8AAAD09PT5+fn8/PyoqKjr6+uEhIRJSUm9vb3v7++JiYmlpaWZmZlRUVG2trYQEBB6enrX19fMzMxubm5dXV3k5OTGxsZiYmKurq6QkJAnJyc2NjYvLy+fn5/d3d0/Pz8ZGRkgICAV5OusAAADwUlEQVRoge1Z65ayOgwtFLlD5SI3HVDf/yG/JgUF0WHwFD0/smfNrEqd7jbdTdLAGIFAIBAIBAKBQCAQCATC/wBmWjdJnudJVKf8k8Rp5BpjxG33GWJTjIgvx+MFGwfP2pyZ7049revUqe1L2J0IYsM4extTZ/2az1FnqicWxwUX4dmoii2pI8V8EkhsZmGSx25cJVHpM+adDbERr8X4QVFH+NmrJnpzW86E4WzDzIofJWq5RGaCBaogFJ5onX5KRm6zPN5Ecj11A4PXxk+T3ll45qjOwKy3IDeVvnfQjM/CfOwOsf+Uerl+bmXYWrbSn/aZJ/Mb/IYoG6Z56UrhjWyVbsesp6NnaPi21nzQM6SugDrnL9flx7gtrdZzztGlnOQmpw77xaTqFNahTu4dLruUkgr4C4MrmDDJS53po/ZRw7lccOsvfLWA0BILfWqrcdkyTnbZooYFnnN9MdVVy2aW+NXgCqi3VBe1ErkcrpsK2Jo1AH6WZaWtixudxlE2zGWvodetWOyMWwjN+8hdW9+dmx+GjwstPAmWyT/K/Bw+e2KtDuzhgI2mA9tQDTOx5eR+HvwJSs4CoSRgixRVYDiPYWAJJf7b9L+qIa4AkntQn3DvLWCEkL7bo28qV+8JOpbL5JF9xPnYOJSSYvya21dZRr7kG54gmA9d9skCZjMoB+MyNfqdO0j3KsCtZ2YsN3DXxnD6TMWT3H0Oh+H1GfcVe933Th1abJqIHXu+E2fdvm8fJnt550ZEb569w3DEbkhh4FgFdOzF9U3UOOUu2ZuYr7uFgW00JgqxSmcEU+7Duz52vt+gLpd5g0GNwpqZBhRxZTebPx7Bv2Kmc66szar7uEAiva5dwE/RlYk6BvA4afFL57eSmdn59noLY6yWFuC92At+NcZImTrfmUpx38lmZn4NFnUFvxJiDyQp6F9q6zimFqznZiaaAe5ra+X+6M/R5O7tkoQqNOGkHfjlRnzNZTbL3EEpnppVuLpMMMQxS03bdpomENj226rP1dugCRreRgoiU7u7i6JGZcxFA8+D1Ykcxu8r6+P3YLY/m896+eEPeJW3sElEx7b8Hect2P3f0on1+Zq+XHGcpy4BkwZHH/fa/NzVmJ9/816y8j6203kfs9bdQ0PN9aal+zc82ej+/dW6w1K9xd+y3rJQZ1KxYps6E9TX1PiP9bXwA/U1GcW+VFdU+LWeWm5XT0UMdeTT5+vIX62fs/l7A5UfwnuD7d8csFfvSz5CDTCzL70nIhAIBAKBQCAQCAQCgUBYh3//QTMuPRejCwAAAABJRU5ErkJggg==" alt="Logo" height="50">
-            <nav>
-                <a href="about.html">About Us</a>
-                <a href="login.html">Sign in</a>
-                <a href="registration.html">Sign up</a>
-                <a href="contact.html">Contact Us</a>
+        <div class="header">
+            <img class="logo" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAHsAAAB7CAMAAABjGQ9NAAAAaVBMVEX///8AAAD09PT5+fn8/PyoqKjr6+uEhIRJSUm9vb3v7++JiYmlpaWZmZlRUVG2trYQEBB6enrX19fMzMxubm5dXV3k5OTGxsZiYmKurq6QkJAnJyc2NjYvLy+fn5/d3d0/Pz8ZGRkgICAV5OusAAADwUlEQVRoge1Z65ayOgwtFLlD5SI3HVDf/yG/JgUF0WHwFD0/smfNrEqd7jbdTdLAGIFAIBAIBAKBQCAQCATC/wBmWjdJnudJVKf8k8Rp5BpjxG33GWJTjIgvx+MFGwfP2pyZ7049revUqe1L2J0IYsM4extTZ/2az1FnqicWxwUX4dmoii2pI8V8EkhsZmGSx25cJVHpM+adDbERr8X4QVFH+NmrJnpzW86E4WzDzIofJWq5RGaCBaogFJ5onX5KRm6zPN5Ecj11A4PXxk+T3ll45qjOwKy3IDeVvnfQjM/CfOwOsf+Uerl+bmXYWrbSn/aZJ/Mb/IYoG6Z56UrhjWyVbsesp6NnaPi21nzQM6SugDrnL9flx7gtrdZzztGlnOQmpw77xaTqFNahTu4dLruUkgr4C4MrmDDJS53po/ZRw7lccOsvfLWA0BILfWqrcdkyTnbZooYFnnN9MdVVy2aW+NXgCqi3VBe1ErkcrpsK2Jo1AH6WZaWtixudxlE2zGWvodetWOyMWwjN+8hdW9+dmx+GjwstPAmWyT/K/Bw+e2KtDuzhgI2mA9tQDTOx5eR+HvwJSs4CoSRgixRVYDiPYWAJJf7b9L+qIa4AkntQn3DvLWCEkL7bo28qV+8JOpbL5JF9xPnYOJSSYvya21dZRr7kG54gmA9d9skCZjMoB+MyNfqdO0j3KsCtZ2YsN3DXxnD6TMWT3H0Oh+H1GfcVe933Th1abJqIHXu+E2fdvm8fJnt550ZEb569w3DEbkhh4FgFdOzF9U3UOOUu2ZuYr7uFgW00JgqxSmcEU+7Duz52vt+gLpd5g0GNwpqZBhRxZTebPx7Bv2Kmc66szar7uEAiva5dwE/RlYk6BvA4afFL57eSmdn59noLY6yWFuC92At+NcZImTrfmUpx38lmZn4NFnUFvxJiDyQp6F9q6zimFqznZiaaAe5ra+X+6M/R5O7tkoQqNOGkHfjlRnzNZTbL3EEpnppVuLpMMMQxS03bdpomENj226rP1dugCRreRgoiU7u7i6JGZcxFA8+D1Ykcxu8r6+P3YLY/m896+eEPeJW3sElEx7b8Hect2P3f0on1+Zq+XHGcpy4BkwZHH/fa/NzVmJ9/816y8j6203kfs9bdQ0PN9aal+zc82ej+/dW6w1K9xd+y3rJQZ1KxYps6E9TX1PiP9bXwA/U1GcW+VFdU+LWeWm5XT0UMdeTT5+vIX62fs/l7A5UfwnuD7d8csFfvSz5CDTCzL70nIhAIBAKBQCAQCAQCgUBYh3//QTMuPRejCwAAAABJRU5ErkJggg==" alt="Logo" height="50">
+            <button class="hamburger-menu">&#9776;</button>
+            <nav class="nav-links">
+                <ul class="nav-list">
+                    <li>
+                        <a href="about.html" class="anchor-list">About us</a>
+                    </li>
+                    <li>
+                        <a href="login.html" class="anchor-list">Sign in</a>
+                    </li>
+                    <li>
+                        <a href="registration.html" class="anchor-list">Sign up</a>
+                    </li>
+                    <li>
+                        <a href="contact.html" class="anchor-list">Contact us</a>
+                    </li>
+                </ul>
+
             </nav>
         </div>
     </header>
-    <div class="container">
-        <h1 style="text-align: center">MJK Associates</h1>
-        <div class="carousel">
-            <div class="carousel-image">
-                <img src="https://images.unsplash.com/photo-1664575602276-acd073f104c1?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTJ8fGJ1c2luZXNzfGVufDB8fDB8fHww&auto=format&fit=crop&w=500&q=60" alt="Image 1">
+    <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4" aria-label="Slide 5"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active" data-bs-interval="5000">
+                <img src="https://images.unsplash.com/photo-1664575602276-acd073f104c1?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTJ8fGJ1c2luZXNzfGVufDB8fDB8fHww&auto=format&fit=crop&w=500&q=60" class="d-block w-100" alt="image1">
             </div>
-            <div class="carousel-image">
-                <img src="https://media.istockphoto.com/id/1419530650/photo/leadership-management-and-teamwork-between-ceo-and-senior-manager-in-a-business-meeting-in.webp?b=1&s=170667a&w=0&k=20&c=CJOhQ2EVC8t3JrWilqAPo4ys7FJ48GMoU8ahitoQ_c4=" alt="Image 2">
+            <div class="carousel-item" data-bs-interval="5000">
+                <img src="https://media.istockphoto.com/id/1419530650/photo/leadership-management-and-teamwork-between-ceo-and-senior-manager-in-a-business-meeting-in.webp?b=1&s=170667a&w=0&k=20&c=CJOhQ2EVC8t3JrWilqAPo4ys7FJ48GMoU8ahitoQ_c4=" class="d-block w-100" alt="image2">
             </div>
-            <div class="carousel-image">
-                <img src="https://media.istockphoto.com/id/1636332539/photo/businessman-analyzing-strategy-on-mirror-at-office.webp?b=1&s=170667a&w=0&k=20&c=pLsYFegvZb-a16sR5k9R6XRIpCo86yJxtydSXOr7PI8=" alt="Image 4">
+            <div class="carousel-item" data-bs-interval="5000">
+                <img src="https://media.istockphoto.com/id/1636332539/photo/businessman-analyzing-strategy-on-mirror-at-office.webp?b=1&s=170667a&w=0&k=20&c=pLsYFegvZb-a16sR5k9R6XRIpCo86yJxtydSXOr7PI8=" class="d-block w-100" alt="image3">
             </div>
-            <div class="carousel-image">
-                <img src="https://media.istockphoto.com/id/1465316262/photo/businessman-inspecting-paperwork-document-of-business-data-analysis-working-management-report.webp?b=1&s=170667a&w=0&k=20&c=L6xi5VJG0gr3a40-i35k8XWcmglc5hlgYP-lSqdEd9s=" alt="Image 5">
+            <div class="carousel-item" data-bs-interval="5000">
+                <img src="https://media.istockphoto.com/id/1465316262/photo/businessman-inspecting-paperwork-document-of-business-data-analysis-working-management-report.webp?b=1&s=170667a&w=0&k=20&c=L6xi5VJG0gr3a40-i35k8XWcmglc5hlgYP-lSqdEd9s=" class="d-block w-100" alt="image4">
             </div>
-            <div class="carousel-image">
-                <img src="https://media.istockphoto.com/id/1460755337/photo/white-color-theme-modern-style-office-with-exposed-concrete-floor-and-a-lot-of-plant-3d.webp?b=1&s=170667a&w=0&k=20&c=vjO4QhU7YP-UEdHsrECZH01Nvj0T5aqnoWSh02XdLeo=" alt="Image 6">
+            <div class="carousel-item" data-bs-interval="5000">
+                <img src="https://media.istockphoto.com/id/1460755337/photo/white-color-theme-modern-style-office-with-exposed-concrete-floor-and-a-lot-of-plant-3d.webp?b=1&s=170667a&w=0&k=20&c=vjO4QhU7YP-UEdHsrECZH01Nvj0T5aqnoWSh02XdLeo=" class="d-block w-100" alt="image5">
             </div>
         </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
     </div>
-    <footer>
-        <div class="container">
-            © 2023 MJK. All Rights Reserved.
+    
+    <footer class="text-center text-lg-start bg-light text-muted">
+        <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
+            <div class="me-5 d-none d-lg-block">
+                <span>Get connected with us on social networks:</span>
+            </div>
+            <div>
+                <a href="" class="me-4 text-reset">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+                <a href="" class="me-4 text-reset">
+                    <i class="fab fa-twitter"></i>
+                </a>
+                <a href="" class="me-4 text-reset">
+                    <i class="fab fa-google"></i>
+                </a>
+                <a href="" class="me-4 text-reset">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="" class="me-4 text-reset">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+                <a href="" class="me-4 text-reset">
+                    <i class="fab fa-github"></i>
+                </a>
+            </div>
+        </section>
+        <section class="">
+            <div class="container text-center text-md-start mt-5">
+                <div class="row mt-3">
+                    <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+                        <h6 class="text-uppercase fw-bold mb-4">
+                            <i class="fas fa-gem me-3"></i>MJK Associates
+                        </h6>
+                        <p>
+                            Here you can use rows and columns to organize your footer content. Lorem ipsum
+                            dolor sit amet, consectetur adipisicing elit.
+                        </p>
+                    </div>
+                    <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+                        <h6 class="text-uppercase fw-bold mb-4">
+                            Products
+                        </h6>
+                        <p>
+                            <a href="#!" class="text-reset">Angular</a>
+                        </p>
+                        <p>
+                            <a href="#!" class="text-reset">React</a>
+                        </p>
+                        <p>
+                            <a href="#!" class="text-reset">Vue</a>
+                        </p>
+                        <p>
+                            <a href="#!" class="text-reset">Laravel</a>
+                        </p>
+                    </div>
+                    <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+                        <h6 class="text-uppercase fw-bold mb-4">
+                            Useful links
+                        </h6>
+                        <p>
+                            <a href="#!" class="text-reset">Pricing</a>
+                        </p>
+                        <p>
+                            <a href="#!" class="text-reset">Settings</a>
+                        </p>
+                        <p>
+                            <a href="#!" class="text-reset">Orders</a>
+                        </p>
+                        <p>
+                            <a href="#!" class="text-reset">Help</a>
+                        </p>
+                    </div>
+                    <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+                        <h6 class="text-uppercase fw-bold mb-4">Contact</h6>
+                        <p><i class="fas fa-home me-3"></i> Church Street, Banglore, India</p>
+                        <p>
+                            <i class="fas fa-envelope me-3"></i>
+                            info@mjk.com
+                        </p>
+                        <p><i class="fas fa-phone me-3"></i> + 91 8592029227</p>
+                        <p><i class="fas fa-print me-3"></i> + 91 9876543210</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
+            © 2023 Copyright:
+            <a class="text-reset fw-bold" href="#">mjk.com</a>
         </div>
     </footer>
+   
     <script>
-        const images = document.querySelectorAll('.carousel img');
-        let currentImageIndex = 0;
 
-        function showImage(index) {
-            images.forEach((img, i) => {
-                img.style.display = i === index ? 'block' : 'none';
-            });
-        }
 
-        function nextImage() {
-            currentImageIndex = (currentImageIndex + 1) % images.length;
-            showImage(currentImageIndex);
-        }
+        const hamburgerMenu = document.querySelector('.hamburger-menu');
+        const navLinks = document.querySelector('.nav-links');
 
-        function previousImage() {
-            currentImageIndex = (currentImageIndex - 1 + images.length) % images.length;
-            showImage(currentImageIndex);
-        }
+        hamburgerMenu.addEventListener('click', () => {
+            if (navLinks.style.display === 'block') {
+                navLinks.style.display = 'none';
+            } else {
+                navLinks.style.display = 'block';
+            }
+        });
 
-        showImage(currentImageIndex);
-
-        setInterval(nextImage, 5000);
     </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 </body>
 </html>

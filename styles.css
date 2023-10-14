@@ -6,7 +6,7 @@
 }
 
 header {
-    background-color: #333;
+    background-color: #000;
     color: #fff;
     padding: 10px 0;
     text-align: center;
@@ -15,28 +15,58 @@ header {
     header a {
         color: #fff;
         text-decoration: none;
-        margin: 0 20px;
+        margin: 0 5px;
     }
 
-    
 
-.container {
-    max-width: 320px;
+
+.login-container, .registration-container {
+    max-width: 350px;
     margin: 20px auto;
     padding: 0 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .carousel {
     display: flex;
     justify-content: center;
     align-items: center;
+    width: 100%;
     height: 400px;
     background-color: #f5f5f5;
     overflow: hidden;
 }
 
+.hamburger-menu {
+    display:none;
+}
+
+li {
+    display: inline;
+}
+
+.login-content, .registration-content {
+    margin-top: 20px;
+    border: 1px solid grey;
+    border-radius: 20px;
+    width: 300px;
+    padding: 30px 0;
+    background-color: #C0C0C0;
+    box-shadow: 5px 10px #888888;
+}
+
+.form-control {
+    margin-top: 20px;
+}
+
+.btn {
+    margin-top: 20px;
+}
+
 footer {
-    background-color: #333;
+    background-color: #000;
     color: #fff;
     text-align: center;
     padding: 10px 0;
@@ -45,9 +75,45 @@ footer {
     width: 100%;
 }
 
-@media (max-width: 768px) {
-    header img {
-        left: 10px;
+@media (max-width: 767px) {
+    .logo {
+        margin: 10px;
+        position: relative;
+        right: 90px;
+    }
+
+    .nav-links {
+        display: none; /* Hide the navigation links by default */
+    }
+
+    .nav-list {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        width: 100%;
+    }
+
+    .anchor-list {
+        display: block;
+        margin: 10px;
+    }
+
+    .hamburger-menu {
+        display: block;
+        position: absolute;
+        right: 25px;
+        top: 25px;
+        background: none;
+        border: none;
+        color: white;
+        width: 50px;
+        height: 40px;
+        font-size: 24px;
+        line-height: 1;
+    }
+
+    .login-content {
+        position: initial;
     }
 
     header nav {
